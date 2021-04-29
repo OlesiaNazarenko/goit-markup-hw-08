@@ -144,7 +144,8 @@ header .list-contacts {
   margin:0 auto;
   display: flex;
   justify-content: space-between;
-  padding-bottom:50px;
+  margin-bottom:50px;
+  
  }
 .filter-button {
   padding: 5px 20px;
