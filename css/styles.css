@@ -779,7 +779,6 @@ input, textarea, a, button {outline-color: var(--color2);}
      width: 16px;
      height: 15px;
      left: 12px;
-     margin-top:2px;
      border-radius: 2px;
      background-color: var(--border-color2);
      border:2px solid var(--main-color);
