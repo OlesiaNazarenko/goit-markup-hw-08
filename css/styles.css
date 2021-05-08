@@ -280,7 +280,7 @@ footer .mail:focus {
 
 .follow-icons{
   position: relative;
-  margin-left: 70px;
+  margin-left: 60px;
   margin-top:8px;
   }
 
@@ -313,7 +313,7 @@ footer .mail:focus {
     min-width: 570px;
      margin-top:8px;
     height: 86px;
-    margin-left: 93px;
+    margin-left: 113px;
   }
   .follow-email-input{
     width: 358px;
@@ -622,7 +622,7 @@ footer .mail:focus {
   margin:8px auto;
   width:11px;
   height:11px;
- 
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 input, textarea, a, button {outline-color: var(--color2);}
 .backdrop.is-hidden{
