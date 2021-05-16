@@ -1,0 +1,48 @@
+footer {
+  position: relative;
+  display: flex;
+  background: $bg-color2;
+  color: $bg-color1;
+  padding: 60px 0;
+}
+footer {
+  .container {
+    display: flex;
+  }
+}
+footer {
+  .logo {
+    color: $bg-color1;
+  }
+}
+.address {
+  margin-top: 30px;
+  font-style: normal;
+  font-weight: $font-normal;
+}
+.footer_contacts__mail,
+.footer_contacts__phone {
+  display: block;
+  margin-top: 15px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer_contacts__mail {
+  &:link {
+    color: rgba(255, 255, 255, 0.6);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  &:hover,
+  &:focus {
+    color: $color2;
+  }
+}
+.footer_contacts__phone {
+  &:link {
+    color: rgba(255, 255, 255, 0.6);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  &:hover,
+  &:focus {
+    color: $color2;
+  }
+}

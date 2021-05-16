@@ -1,0 +1,64 @@
+.follow-icons {
+  position: relative;
+  margin-left: 60px;
+  margin-top: 8px;
+}
+
+.follow-icons .social-icons {
+  padding: 0;
+  width: 206px;
+}
+.follow-icons .social-icons__link {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--border-color2);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.follow-icons {
+  .social-icons {
+    .social-icons__link {
+      &:hover,
+      &:focus {
+        background-color: $color2;
+      }
+    }
+  }
+}
+
+.follow-email__title,
+.follow-icons__title {
+  @extend %follow-title;
+}
+.follow-email {
+  position: relative;
+  min-width: 570px;
+  margin-top: 8px;
+  height: 86px;
+  margin-left: 113px;
+}
+.follow-email__input {
+  width: 358px;
+  margin-right: 12px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 16px 15px;
+  background: transparent;
+  color: $color3;
+}
+.follow-email__button {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  padding: 10px 24px 10px 0;
+  @extend %button;
+}
+.follow-email__icon-send {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  margin-top: 3px;
+}

@@ -1,0 +1,33 @@
+.abilities {
+  position: relative;
+  padding-top: 0;
+}
+.abilities__list {
+  position: relative;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  padding-inline-start: 0;
+}
+.abilities__label {
+  position: absolute;
+  width: 370px;
+  bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background: rgba(47, 48, 58, 0.8);
+  color: #ffffff;
+}
+.abilities__text {
+  margin: 0;
+}
+.abilities__item {
+  width: 370px;
+  height: 294px;
+}
+.abilities__title {
+  @extend %title;
+}

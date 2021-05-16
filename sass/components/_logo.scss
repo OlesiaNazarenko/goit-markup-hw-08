@@ -1,0 +1,17 @@
+.logo {
+  width: 145px;
+  font-family: $logo-font;
+  font-style: normal;
+  font-weight: $font-bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+  &:hover,
+  &:focus {
+    color: $color2;
+  }
+}
+.logo__different-color {
+  color: $color2;
+}
