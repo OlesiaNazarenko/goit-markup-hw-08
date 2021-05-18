@@ -598,7 +598,7 @@ button {
 }
 
 .benefits__item_antenna::before {
-  background-image: url(../..images/antenna.svg);
+  background-image: url(../../images/antenna.svg);
 }
 
 .benefits__item_clock::before {
