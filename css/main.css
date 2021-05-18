@@ -494,8 +494,8 @@ button {
   max-width: 1600px;
   margin: 0 auto;
   background: #2f303a;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/bg_hero.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/bg_hero.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/bg_hero.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bg_hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -598,19 +598,19 @@ button {
 }
 
 .benefits__item_antenna::before {
-  background-image: url(/images/antenna.svg);
+  background-image: url(../..images/antenna.svg);
 }
 
 .benefits__item_clock::before {
-  background-image: url(/images/clock.svg);
+  background-image: url(../../images/clock.svg);
 }
 
 .benefits__item_diagram::before {
-  background-image: url(/images/diagram.svg);
+  background-image: url(../../images/diagram.svg);
 }
 
 .benefits__item_astronaut::before {
-  background-image: url(/images/astronaut.svg);
+  background-image: url(../../images/astronaut.svg);
 }
 
 .benefits__subtitle {
