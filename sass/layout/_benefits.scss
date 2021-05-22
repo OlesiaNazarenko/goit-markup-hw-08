@@ -55,7 +55,7 @@
   &::before {
     content: "";
     display: block;
-    width: 450px;
+    max-width: 100%;
     height: 120px;
     background-color: $bg-color3;
     background-repeat: no-repeat;
