@@ -1,11 +1,30 @@
 .filter-list {
-  width: 661px;
-  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  flex-basis: 33.3%;
+
+  padding: 0 15px;
+  @media screen and (min-width: 480px) {
+    flex-wrap: wrap;
+    flex-basis: 33.3%;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 611px;
+    margin: 50px auto;
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 661px;
+    margin: 50px auto;
+    padding-left: 30px;
+    justify-content: space-between;
+    padding: 0;
+  }
 }
 .filter-list__button {
+  margin: 0 8px 15px 0;
   padding: 5px 20px;
   font-weight: 500;
   font-size: 16px;

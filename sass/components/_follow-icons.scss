@@ -1,7 +1,17 @@
 .follow-icons {
+  width: 206px;
   position: relative;
-  margin-left: 60px;
-  margin-top: 8px;
+  //margin-left: auto;
+  //margin-top: 8px;
+  margin: 8px auto 60px auto;
+  @media screen and (min-width: 768px) {
+    margin-top: 25px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: auto;
+    margin-left: 70px;
+    margin-top: 8px;
+  }
 }
 
 .follow-icons .social-icons {
@@ -28,18 +38,27 @@
 .follow-email__title,
 .follow-icons__title {
   @extend %follow-title;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .follow-email {
   position: relative;
-  min-width: 570px;
-  margin-top: 8px;
-  height: 86px;
-  margin-left: 113px;
+  margin: 8px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    height: 86px;
+    margin: 8px 0 0 113px;
+    min-width: 570px;
+  }
 }
 .follow-email__input {
-  width: 358px;
-  margin-right: 12px;
+  width: 450px;
   height: 50px;
+  display: block;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -47,13 +66,35 @@
   padding: 16px 15px;
   background: transparent;
   color: $color3;
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin: 0;
+  }
 }
 .follow-email__button {
-  position: absolute;
+  position: relative;
+  display: inline-block;
+  margin: 20px auto 60px auto;
   width: 200px;
   height: 50px;
   padding: 10px 24px 10px 0;
   @extend %button;
+  @media screen and (min-width: 480px) {
+    display: block;
+    margin: 20px auto;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin: 20px auto;
+  }
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    margin: -50px 0 0 370px;
+  }
 }
 .follow-email__icon-send {
   position: absolute;

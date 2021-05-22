@@ -1,24 +1,75 @@
 .benefits {
   position: relative;
+  width: 100%;
+  .container {
+    margin: 0;
+    padding: 0;
+    @media screen and (min-width: 480px) {
+      width: 100%;
+    }
+    @media screen and (min-width: 768px) {
+      width: 100%;
+      padding: 0 15px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin: 0 auto;
+      width: 1170px;
+      padding: 0;
+    }
+  }
 }
 .benefits__list {
-  display: flex;
-  padding-inline-start: 0;
-  justify-content: space-between;
+  display: inline-block;
+  padding: 0 15px;
+  @media screen and (min-width: 480px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    width: 738px;
+    display: flex;
+    padding-inline-start: 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    width: 100%;
+    padding-inline-start: 0;
+    justify-content: space-between;
+  }
 }
 .benefits__item {
-  width: 270px;
+  width: 100%;
+
+  @media screen and (min-width: 480px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 .benefits__item {
   &::before {
     content: "";
     display: block;
-    width: 270px;
+    width: 450px;
     height: 120px;
     background-color: $bg-color3;
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 30px;
+    @media screen and (min-width: 480px) {
+      width: 100%;
+    }
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 }
 .benefits__item_antenna {
@@ -48,11 +99,21 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $main-color;
+  text-align: center;
+  @media screen and (min-width: 480px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .benefits__text {
   font-weight: $font-normal;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: $color3;
-  width: 270px;
+  width: 100%;
 }

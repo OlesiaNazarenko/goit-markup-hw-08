@@ -7,9 +7,13 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
+  padding: 16px 15px;
   &:hover,
   &:focus {
     color: $color2;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0;
   }
 }
 .logo__different-color {

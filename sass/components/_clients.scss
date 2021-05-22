@@ -1,26 +1,117 @@
+.clients {
+  margin: 0 auto;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding: 94px 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 0 auto;
+    padding: 94px 0;
+  }
+  &.container {
+    margin: 0;
+    padding: 60px 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients {
+    &.container {
+      width: 768px;
+      margin: 0;
+      padding: 60px 15px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    &.container {
+      width: 1200px;
+      margin: 0 auto;
+      padding: 90px 15px;
+    }
+  }
+}
+
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-inline-start: 0px;
+    justify-content: start;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    position: relative;
+    width: 1170px;
+    margin: 0;
+    flex-wrap: nowrap;
+    padding-inline-start: 0px;
+  }
+}
+
+.clients__item {
+  margin-right: 30px;
+  width: 100%;
+  @media screen and (min-width: 480px) {
+    // flex-basis: calc ((100 - 3 * 15) / 2);
+    width: 210px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+    margin-right: 30px;
+    width: 170px;
+  }
+}
 .clients__link {
-  display: inline-block;
+  display: block;
   border: 1px solid $border-color;
-  width: 170px;
   height: 92px;
   color: #afb1b8;
-  margin-right: 30px;
+  margin-bottom: 30px;
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1200px) {
+  }
+  &:hover,
+  &:focus {
+    border-color: $color2;
+  }
 }
 .clients__icon {
   display: block;
   margin: 22px auto;
   fill: currentColor;
 }
-.clients__link {
-  &:last-of-type {
-    margin-right: 0;
+
+@media screen and (min-width: 768px) {
+  .clients__item {
+    &:last-of-type {
+      margin-right: 0;
+    }
   }
-  &:hover,
-  &:focus {
-    border-color: $color2;
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    &:last-of-type {
+      margin-right: 0;
+    }
   }
 }
 .clients__title {
