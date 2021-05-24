@@ -40,4 +40,20 @@
 }
 .abilities__title {
   @extend %title;
+  @media screen and(max-width:480px) {
+    font-size: 26px;
+    margin: 0 auto 30px auto;
+  }
+  @media screen and(min-width:480px) {
+    font-size: 26px;
+    margin: 0 auto 30px auto;
+  }
+  @media screen and(min-width:768px) {
+    font-size: 28px;
+    margin: 0 auto 30px auto;
+  }
+  @media screen and(min-width:1200px) {
+    font-size: 36px;
+    margin: 0 auto 50px auto;
+  }
 }

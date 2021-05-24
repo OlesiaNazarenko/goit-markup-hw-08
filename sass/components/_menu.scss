@@ -1,0 +1,43 @@
+.menu__button {
+  position: absolute;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  right: 20px;
+  top: 24px;
+  padding: 0;
+  background: transparent;
+
+  border: none;
+  justify-content: center;
+  &:hover .icon-menu,
+  &:focus .icon-menu {
+    fill: $color2;
+  }
+  @media screen and(min-width:768px) {
+    display: none;
+  }
+}
+.menu__button .icon-cross {
+  display: none;
+}
+.menu__button.is-open {
+  .icon-cross {
+    display: block;
+  }
+  .icon-menu {
+    display: none;
+  }
+}
+.menu-container {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  display: none;
+  height: 796px;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
+  z-index: 100;
+}

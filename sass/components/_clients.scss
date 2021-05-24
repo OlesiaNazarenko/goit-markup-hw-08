@@ -11,14 +11,14 @@
   }
   &.container {
     margin: 0;
-    padding: 60px 0x;
+    padding: 60px 0px;
   }
 }
 @media screen and (min-width: 480px) {
   .clients {
     &.container {
       width: 480px;
-      margin: 0;
+      margin: 0 auto;
       padding: 60px 0;
     }
   }
@@ -29,10 +29,11 @@
     &.container {
       width: 768px;
       margin: 0;
-      padding: 60px 15px;
+      padding: 60px 0;
     }
   }
 }
+
 @media screen and (min-width: 1200px) {
   .clients {
     &.container {
@@ -48,24 +49,31 @@
   flex-wrap: wrap;
   padding: 0;
   width: 100%;
-  margin: 0 auto;
+  margin-left: calc(#{$projects-item-gap}/ 2);
+  margin-right: calc(#{$projects-item-gap}/ 2);
   justify-content: center;
   @media screen and (max-width: 480px) {
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+    margin-left: calc(#{$projects-item-gap}/ 2);
+    margin-right: calc(#{$projects-item-gap}/ 2);
+    //margin: 0 auto;
     padding: 0;
   }
   @media screen and (min-width: 480px) {
     display: flex;
-    justify-content: center;
+
     margin: 0 auto;
     padding: 0;
+    width: 450px;
   }
   @media screen and (min-width: 768px) {
-    width: 768px;
+    display: flex;
+    width: 738px;
     padding-inline-start: 0px;
-    justify-content: start;
+
+    margin-left: calc(#{$projects-item-gap}/ 2);
+    margin-right: calc(#{$projects-item-gap}/ 2);
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -78,29 +86,40 @@
 }
 
 .clients__item {
-  margin-right: 30px;
-  min-width: 170px;
+  //margin-right: 30px;
+
   @media screen and (max-width: 480px) {
-    width: 40%;
-    margin-right: 0;
+    flex-basis: calc((100% - 2 * #{$projects-item-gap}) / 2);
+    margin-right: 30px;
   }
   @media screen and (min-width: 480px) {
-    width: 210px;
+    //width: 210px;
+    flex-basis: calc((100% - 2 * #{$projects-item-gap}) / 2);
+    margin-right: 30px;
+  }
 
-    margin-right: 0;
-  }
-  @media screen and (max-width: 768px) {
-    width: 40%;
-    margin-right: 30px;
-  }
   @media screen and (min-width: 768px) {
-    width: 226px;
-    margin-right: 30px;
+    flex-basis: calc((100% - 3 * #{$projects-item-gap}) / 3);
+    margin-right: $projects-item-gap;
   }
   @media screen and (min-width: 1200px) {
     display: inline-block;
     margin-right: 30px;
     width: 170px;
+  }
+}
+
+.clients__item:nth-child(3n) {
+  margin-right: 30px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 0;
+  }
+}
+.clients__item:nth-child(2n) {
+  margin-right: 30px;
+  @media screen and (max-width: 767px) {
+    margin-right: 0;
   }
 }
 .clients__link {
@@ -141,4 +160,20 @@
 }
 .clients__title {
   @extend %title;
+  @media screen and(max-width:480px) {
+    font-size: 26px;
+    margin: 0 auto 30px auto;
+  }
+  @media screen and(min-width:480px) {
+    font-size: 26px;
+    margin: 0 auto 30px auto;
+  }
+  @media screen and(min-width:768px) {
+    font-size: 28px;
+    margin: 0 auto 30px auto;
+  }
+  @media screen and(min-width:1200px) {
+    font-size: 36px;
+    margin: 0 auto 50px auto;
+  }
 }

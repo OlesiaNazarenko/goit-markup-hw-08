@@ -21,6 +21,21 @@
                 <li><a class="nav__link" href="">Контакты</a></li>
             </ul>
         </nav>
+        <button 
+            data-menu-button
+            aria-expanded="false" 
+            type="button" 
+            class="menu__button is-open"
+            aria-controls="menu-container">
+            <svg  aria-label="Переключатель мобильного меню">
+                <use class="icon-menu" width="24" height="16" href="./images/icons.svg#icon-menu"></use>
+                <use class="icon-cross" width="18" height="18" href="./images/icons.svg#icon-cross"></use>
+            </svg>
+        </button>
+        <div class="menu-container" id="menu-container" data-menu>
+               <div class="navigation"></div>
+               <div class="contacts"></div>
+        </div>
         <div class="header-contacts">
             <ul class="header-contacts__list">
                 <li><a class="header-contacts__mail header-contacts__link" href="mailto:info@devstudio.com">
@@ -328,28 +343,27 @@
                     <input type="text" name="name" id="name" class="modal-labels__input modal-labels__input_name" />
                 </div>
                 <div class="modal-labels">
-                    <label for="tel" >
+                    <label for="tel" >Телефон</label>
                         <svg class="modal-labels__icon modal-labels__icon_phone-number">
                             <use href="./images/icons.svg#icon-phone-number"></use>
                         </svg>
-                    Телефон
+                    
                     <input type="tel" name="tel" id="tel"  class=" modal-labels__input modal-labels__input_phone"/>
-                    </label>
+                   
                 </div>
                 <div class="modal-labels">
-                    <label for="mail" >
+                    <label for="mail" >Почта</label>
                         <svg class="modal-labels__icon modal-labels__icon_mail">
                             <use href="./images/icons.svg#icon-form-mail"></use>
                         </svg>
-                    Почта
+                    
                     <input type="email" name="email" id="mail" class="modal-labels__input modal-labels__input_email"/>
-                    </label>
+                    
                 </div>
                 <div class="modal-labels">
-                    <label for="comment">
-                    Комменатрий
+                    <label for="comment">Комменатрий</label>
                     <textarea id="comment" name="comment" class="modal-labels__input modal-labels__input_comment" placeholder="Введите текст"></textarea>
-                    </label>
+                    
                 </div>
                 <div class="modal-labels">
                     <label for="agreement" class="modal-labels__agreement">
