@@ -25,7 +25,7 @@
             data-menu-button
             aria-expanded="false" 
             type="button" 
-            class="menu__button is-open"
+            class="menu__button "
             aria-controls="menu-container">
             <svg  aria-label="Переключатель мобильного меню">
                 <use class="icon-menu" width="24" height="16" href="./images/icons.svg#icon-menu"></use>
@@ -33,8 +33,23 @@
             </svg>
         </button>
         <div class="menu-container" id="menu-container" data-menu>
-               <div class="navigation"></div>
-               <div class="contacts"></div>
+               <div class="menu-container__navigation">
+                    <ul class="menu-container__navigation__list">
+                        <li class="menu-container__navigation__item"><a class="menu-container__navigation__link_active nav__link" target="_blank" href="index.html">Студия</a></li>
+                        <li class="menu-container__navigation__item"><a class="menu-container__navigation__link" target="_blank"  href="portfolio.html">Портфолио</a></li>
+                        <li class="menu-container__navigation__item"><a class="menu-container__navigation__link" target="_blank" href="">Контакты</a></li>
+                    </ul>
+               </div>
+               <div class="menu-container__contacts">
+                    <a class="menu-container__contacts__phone header-contacts__link" href="tel:+380961111111">+38 096 111 11 11</a>
+                    <a class="menu-container__contacts__mail header-contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </div>
+                <ul class="menu-container__socials">
+                    <li class="menu-container__item"><a href=""></a>Instagram</li>
+                    <li class="menu-container__item"><a href=""></a>Twitter</li>
+                    <li class="menu-container__item"><a href=""></a>Facebook</li>
+                    <li class="menu-container__item"><a href=""></a>LinkedIn</li>
+                </ul>
         </div>
         <div class="header-contacts">
             <ul class="header-contacts__list">
@@ -381,5 +396,6 @@
         </div>
         </div>
         <script src="./js/modal.js"></script>
+        <script src="./js/menu.js"></script>
 </body>
 </html>

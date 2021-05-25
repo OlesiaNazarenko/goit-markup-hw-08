@@ -55,7 +55,7 @@
   @media screen and (max-width: 480px) {
     display: flex;
     justify-content: center;
-    margin-left: calc(#{$projects-item-gap}/ 2);
+    margin-left: 0;
     margin-right: calc(#{$projects-item-gap}/ 2);
     //margin: 0 auto;
     padding: 0;
@@ -72,7 +72,7 @@
     width: 738px;
     padding-inline-start: 0px;
 
-    margin-left: calc(#{$projects-item-gap}/ 2);
+    margin-left: 0;
     margin-right: calc(#{$projects-item-gap}/ 2);
   }
   @media screen and (min-width: 1200px) {
