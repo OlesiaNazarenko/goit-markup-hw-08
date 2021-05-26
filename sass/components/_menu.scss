@@ -28,8 +28,10 @@
   position: absolute;
   top: 100%;
   width: 100%;
+
   left: 0;
   opacity: 0;
+  pointer-events: none;
   height: 796px;
   padding: 38px 0;
   background: #ffffff;
@@ -39,6 +41,7 @@
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &.is-open {
     opacity: 1;
+    pointer-events: auto;
   }
   @media screen and(max-width:400px) {
     height: 820px;

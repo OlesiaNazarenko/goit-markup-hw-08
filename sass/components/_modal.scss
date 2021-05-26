@@ -32,21 +32,28 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (max-width: 480px) {
-    width: 90%;
+    width: 80%;
     height: 609px;
-    left: 48%;
+    left: 45%;
+    transform: translate(-45%, -70%) scale(1);
   }
   @media screen and (min-width: 480px) {
     width: 450px;
     height: 609px;
+    left: 45%;
+    transform: translate(-45%, -70%) scale(1);
   }
   @media screen and (min-width: 768px) {
     width: 450px;
     height: 609px;
+    left: 400px;
+    transform: translate(-55%, -60%) scale(1);
   }
   @media screen and (min-width: 1200px) {
     width: 528px;
     height: 581px;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 .modal__close-button {
