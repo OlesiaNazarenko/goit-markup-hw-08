@@ -2159,9 +2159,10 @@ footer .logo {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  height: 581px;
+  height: 609px;
+  width: 450px;
   background: #ffffff;
+  margin-bottom: 30px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -2176,8 +2177,8 @@ footer .logo {
     width: 80%;
     height: 609px;
     left: 45%;
-    -webkit-transform: translate(-45%, -70%) scale(1);
-            transform: translate(-45%, -70%) scale(1);
+    -webkit-transform: translate(-45%, -50%) scale(1);
+            transform: translate(-45%, -50%) scale(1);
   }
 }
 
@@ -2186,8 +2187,8 @@ footer .logo {
     width: 450px;
     height: 609px;
     left: 45%;
-    -webkit-transform: translate(-45%, -70%) scale(1);
-            transform: translate(-45%, -70%) scale(1);
+    -webkit-transform: translate(-45%, -50%) scale(1);
+            transform: translate(-45%, -50%) scale(1);
   }
 }
 
@@ -2196,8 +2197,8 @@ footer .logo {
     width: 450px;
     height: 609px;
     left: 400px;
-    -webkit-transform: translate(-55%, -60%) scale(1);
-            transform: translate(-55%, -60%) scale(1);
+    -webkit-transform: translate(-55%, -50%) scale(1);
+            transform: translate(-55%, -50%) scale(1);
   }
 }
 
