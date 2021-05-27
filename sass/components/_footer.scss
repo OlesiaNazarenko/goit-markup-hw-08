@@ -26,12 +26,10 @@ footer {
     margin: 0 auto;
     @media screen and (min-width: 768px) {
       width: 768px;
-      margin: 0;
       padding: 0;
     }
     @media screen and (min-width: 1200px) {
       display: flex;
-      margin: 0 auto;
       width: 1170px;
       justify-content: space-between;
     }
@@ -43,8 +41,12 @@ footer {
     display: block;
     color: $bg-color1;
     margin: 0 auto;
+    @media screen and (min-width: 480px) {
+      padding: 16px 0;
+    }
     @media screen and (min-width: 1200px) {
       margin: 0;
+      padding: 0;
     }
   }
 }

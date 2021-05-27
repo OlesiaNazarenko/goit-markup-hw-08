@@ -6,11 +6,9 @@
     padding: 94px 0;
   }
   @media screen and (min-width: 1200px) {
-    margin: 0 auto;
     padding: 94px 0;
   }
   &.container {
-    margin: 0;
     padding: 60px 0px;
   }
 }
@@ -18,7 +16,7 @@
   .clients {
     &.container {
       width: 480px;
-      margin: 0 auto;
+
       padding: 60px 0;
     }
   }
@@ -28,7 +26,6 @@
   .clients {
     &.container {
       width: 768px;
-      margin: 0;
       padding: 60px 0;
     }
   }
@@ -38,7 +35,6 @@
   .clients {
     &.container {
       width: 1200px;
-      margin: 0 auto;
       padding: 90px 15px;
     }
   }
@@ -49,39 +45,26 @@
   flex-wrap: wrap;
   padding: 0;
   width: 100%;
-  margin-left: calc(#{$projects-item-gap}/ 2);
-  margin-right: calc(#{$projects-item-gap}/ 2);
+  padding-inline-start: 0px;
   justify-content: center;
   @media screen and (max-width: 480px) {
     display: flex;
     justify-content: center;
-    margin-left: 0;
-    margin-right: calc(#{$projects-item-gap}/ 2);
-    //margin: 0 auto;
-    padding: 0;
   }
   @media screen and (min-width: 480px) {
     display: flex;
-
-    margin: 0 auto;
     padding: 0;
-    width: 450px;
+    width: 100%;
   }
   @media screen and (min-width: 768px) {
     display: flex;
-    width: 738px;
-    padding-inline-start: 0px;
-
-    margin-left: 0;
-    margin-right: calc(#{$projects-item-gap}/ 2);
+    width: 100%;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
     position: relative;
     width: 1170px;
-    margin: 0;
     flex-wrap: nowrap;
-    padding-inline-start: 0px;
   }
 }
 
