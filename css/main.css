@@ -2069,9 +2069,6 @@ footer .logo {
   .modal {
     width: 80%;
     height: 609px;
-    left: 45%;
-    -webkit-transform: translate(-45%, -50%) scale(1);
-            transform: translate(-45%, -50%) scale(1);
   }
 }
 
@@ -2079,19 +2076,12 @@ footer .logo {
   .modal {
     width: 450px;
     height: 609px;
-    left: 45%;
-    -webkit-transform: translate(-45%, -50%) scale(1);
-            transform: translate(-45%, -50%) scale(1);
   }
 }
 
 @media screen and (min-width: 768px) {
   .modal {
     width: 450px;
-    height: 609px;
-    left: 400px;
-    -webkit-transform: translate(-50%, -40%) scale(1);
-            transform: translate(-50%, -40%) scale(1);
   }
 }
 
@@ -2099,9 +2089,6 @@ footer .logo {
   .modal {
     width: 528px;
     height: 581px;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%) scale(1);
-            transform: translate(-50%, -50%) scale(1);
   }
 }
 
